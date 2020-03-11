@@ -1,0 +1,49 @@
+table {
+	width: 100%;
+}
+
+table, td, th {
+	 border: 1px solid black;
+}
+
+th {
+	text-align: center;
+}
+
+td, th {
+	padding: 5px 10px;
+}
+
+table tbody tr td:last-child {
+	width: 30%;
+}
+
+table tbody tr td button {
+	text-align: initial;
+    word-break: break-word;
+}
+
+.jokeslist {
+	max-width: 1920px;
+	max-height: 1080px;
+	margin: 4px;
+	overflow: auto;
+	font-size: 14px;
+    font-family: sans-serif;
+}
+
+.filter-input {
+    text-align: right;
+    margin-bottom: 4px;
+}
+
+.filter-input input {
+	padding: 0 2px;
+}
+
+.no-records {
+	border: 1px solid;
+    border-top: 0;
+    text-align: center;
+    padding: 10px;
+}

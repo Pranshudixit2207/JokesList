@@ -1,0 +1,27 @@
+<div class="jokeslist">
+	<div class="filter-input">
+  		<input placeholder="Search" type="text" (keyup)="filterJokes($event)">
+	</div>
+	<table class="table table-striped table-hover table-bordered">
+		<thead class="thead-dark">
+			<tr>
+				<th>ID</th>
+				<th>Type</th>
+				<th>Setup</th>
+				<th>Punchline</th>
+			</tr>
+		</thead>
+		<tbody *ngIf="jokesData.length>0">
+			<tr *ngFor="let jokes of jokesData; let i = index;">
+				<td>{{jokes.id}}</td>
+				<td>{{jokes.type | titlecase}}</td>
+				<td>{{jokes.setup}}</td>
+				<td (click)="toggleLine(jokes, i)">
+					<button class="btn btn-secondary">{{jokes.isPanch? jokes.punchline: 'Punchline'}}</button></td>
+			</tr>
+		</tbody>
+	</table>
+	<div class='no-records' *ngIf="jokesData.length === 0">
+		<span>No Records</span>
+	</div>
+</div>
