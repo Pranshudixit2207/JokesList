@@ -24,6 +24,9 @@
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2",
     "xmlhttprequest-ssl": ">=1.6.2",
+    "lodash": "~> 4.17.21",
+    "url-parse": "~> 1.5.0",
+    "hosted-git-info": "~> 3.0.8",
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.5",
