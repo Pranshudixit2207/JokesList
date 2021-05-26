@@ -27,7 +27,8 @@
     "lodash": "~> 4.17.21",
     "url-parse": "~> 1.5.0",
     "hosted-git-info": "~> 3.0.8",
-     "ssri": ">=7.1.1",
+    "ssri": ">=7.1.1",
+    "xmlhttprequest-ssl": ">=1.6.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.5",
